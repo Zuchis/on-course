@@ -1,0 +1,17 @@
+{
+    "printWidth": 90,
+    "tabWidth": 4,
+    "trailingComma": "all",
+    "singleQuote": true,
+    "jsxBracketSameLine": true,
+    "semi": true,
+    "importOrder": [
+        "^@packages/(.*)$",
+        "^@core-ui/(.*)$",
+        "^@app-ui/(.*)$",
+        "^@app/(.*)$",
+        "^[./]"
+    ],
+    "importOrderSeparation": true,
+    "experimentalBabelParserPluginsList": ["jsx", "typescript"]
+}

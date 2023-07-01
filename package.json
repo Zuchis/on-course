@@ -12,11 +12,27 @@
     "@types/node": "20.3.2",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
+    "@urql/core": "^4.0.10",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.7",
+    "graphql": "^16.7.1",
+    "graphql-tag": "^2.12.6",
     "next": "13.4.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "5.1.5"
+    "typescript": "5.1.5",
+    "urql": "^4.0.4"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^4.0.1",
+    "@graphql-codegen/client-preset": "^4.0.1",
+    "@graphql-eslint/eslint-plugin": "^3.19.2",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "prettier": "2.8.8",
+    "ts-node": "^10.9.1"
   }
 }

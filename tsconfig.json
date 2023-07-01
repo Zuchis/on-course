@@ -1,45 +1,45 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "strictNullChecks": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "baseUrl": "./",
-    "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
+    "compilerOptions": {
+        "target": "es5",
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "strictNullChecks": true,
+        "forceConsistentCasingInFileNames": true,
+        "noEmit": true,
+        "esModuleInterop": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "jsx": "preserve",
+        "baseUrl": "./",
+        "incremental": true,
+        "typeRoots": ["node_modules/@types", "src/@types"],
+        "plugins": [
+            {
+                "name": "next"
+            }
+        ],
+        "paths": {
+            "@packages/*": ["./packages/*"],
+            "@core-ui/*": ["./components/core-ui/*"],
+            "@app-ui/*": ["./components/app-ui/*"],
+            "@app/*": ["./app/*"]
+        }
+    },
+    "files": ["src/@types/graphql.d.ts"],
+    "include": [
+        "next-env.d.ts",
+        ".next/types/**/*.ts",
+        "packages/**/*.ts",
+        "packages/**/*.tsx",
+        "packages/**/*.svg",
+        "pages/**/*.ts",
+        "pages/**/*.tsx",
+        "app/**/*.ts",
+        "app/**/*.tsx"
     ],
-    "paths": {
-      "@app/*": ["./app/*"],
-      "@core-ui/*": ["./components/core-ui/*"],
-      "@app-ui/*": ["./components/app-ui/*"],
-      "@packages/*": ["./packages/*"]
-    }
-  },
-  "include": [
-    "next-env.d.ts",
-    ".next/types/**/*.ts",
-    "packages/**/*.ts",
-    "packages/**/*.tsx",
-    "packages/**/*.svg",
-    "pages/**/*.ts",
-    "pages/**/*.tsx",
-    "app/**/*.ts",
-    "app/**/*.tsx",
-    "components/**/*.ts",
-    "components/**/*.tsx"
-  ],
-  "exclude": ["node_modules"]
+    "exclude": ["node_modules"]
 }
