@@ -7,6 +7,7 @@ const Home = () => {
     return (
         <main className={styles.main}>
             <Test />
+            <i className="fas fa-home"></i>
             <Link href="/privacy_policy">Privacy policy</Link>
         </main>
     );
