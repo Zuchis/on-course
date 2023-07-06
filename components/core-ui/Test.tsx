@@ -12,6 +12,7 @@ export const Test: FC = () => {
     const [result] = useQuery<GetUsersQuery, GetUsersQueryVariables>({
         query: getUsersQuery,
     });
+
     const { data, fetching, error } = result;
 
     if (fetching) return <p>Loading...</p>;
