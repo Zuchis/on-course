@@ -1,14 +1,12 @@
 'use client';
 
-import React, { FC, useState } from 'react';
+import React, { FC } from 'react';
 import { useQuery } from 'urql';
 
 import { GetUsersQuery, GetUsersQueryVariables } from '@packages/graphql-types';
 import { getUsersQuery } from '@packages/queries';
 
 export const Test: FC = () => {
-    const [count] = useState(0);
-
     const [result] = useQuery<GetUsersQuery, GetUsersQueryVariables>({
         query: getUsersQuery,
     });
@@ -24,8 +22,7 @@ export const Test: FC = () => {
 
     return (
         <>
-            <span>oi</span>
-            <span>{count}</span>
+            <span>test users query</span>
         </>
     );
 };
