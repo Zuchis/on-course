@@ -39,7 +39,9 @@
         "pages/**/*.ts",
         "pages/**/*.tsx",
         "app/**/*.ts",
-        "app/**/*.tsx"
+        "app/**/*.tsx",
+        "components/**/*.ts",
+        "components/**/*.tsx"
     ],
     "exclude": ["node_modules"]
 }
