@@ -9,5 +9,7 @@ export const getGraphqlHost = (): string => {
         return process.env.GRAPHQL_ENDPOINT || '/graphql';
     }
 
+    console.log(serverRuntimeConfig);
+
     return serverRuntimeConfig?.GRAPHQL_ENDPOINT || '/graphql';
 };
